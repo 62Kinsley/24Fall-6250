@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+#app {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.login-view {
+  padding: 20px;
+}
+
+.login-title {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.username-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+}
+
+.word-view {
+  padding: 20px;
+}
+
+.stored-word {
+  font-weight: bold;
+  color: #333;
+}
+
+.word-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.update-word-btn,
+.logout-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-word-btn {
+  background-color: #008CBA;
+  color: white;
+}
+
+.update-word-btn:hover {
+  background-color: #007bb5;
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.logout-button:hover {
+  background-color: #e6392c;
+}
+
+.error {
+  color: #f44336;
+  font-size: 0.9em;
+  margin-top: 10px;
+}

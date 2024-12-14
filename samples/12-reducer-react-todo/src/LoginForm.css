@@ -1,0 +1,11 @@
+.login { 
+  max-width: 10rem;
+}
+
+.login__label {
+  display: grid;
+
+  margin-bottom: 1rem;
+
+  line-height: 1.4;
+}

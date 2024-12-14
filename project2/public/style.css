@@ -1,0 +1,221 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;  
+    min-width: 400px;  
+    min-height: 400px; 
+    background-color: white; 
+    padding: 50px;
+    box-sizing: border-box; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+} 
+
+.chat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px; 
+}
+
+
+#login, #userList, #message, #chatInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login {
+    background-color: #f0f0f0;
+}
+
+#userList {
+    background-color: #e0e0e0;
+    flex: 1; 
+}
+
+#message {
+    background-color: #f8f8f8;
+    flex: 2; 
+}
+
+#chatInput {
+    margin: 10px 0;
+    background-color: #d0d0d0;
+}
+
+
+.login, .logout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.enterUsername {
+    padding:10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.login button, .logout button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login button:hover, .logout button:hover {
+    background-color: #45a049;
+}
+
+.userlist, .users {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.user {
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.username {
+    font-weight: bold;
+    color: #333333;
+}
+
+.messages {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.message {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.sender-info {
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+.message-text {
+    margin: 0;
+    color: #333333;
+}
+
+.button-area {
+    display: flex;
+    align-items: center;
+}
+
+.outgoing {
+    margin-top: 20px;
+}
+
+.send {
+    display: flex;
+    align-items: center;
+}
+
+.to-send {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.send button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.send button:hover {
+    background-color: #0069d9;
+}
+
+::placeholder {
+    color: gray;
+}
+
+.send input,
+.message-text {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+
+@media (min-width: 50rem) {
+    body {
+        grid-template-columns: 3fr 4fr;
+    }
+}
+
+@keyframes spinner-two-alt {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(359deg)
+    }
+}
+
+.gg-spinner-two-alt,
+.gg-spinner-two-alt::before {
+    box-sizing: border-box;
+    display: block;
+    width: 20px;
+    height: 20px
+}
+
+.gg-spinner-two-alt {
+    margin-left: 8px;
+    transform: scale(var(--ggs, 1));
+    position: relative
+}
+
+.gg-spinner-two-alt::before {
+    content: "";
+    position: absolute;
+    border-radius: 100px;
+    animation: spinner-two-alt 1s cubic-bezier(.6, 0, .4, 1) infinite;
+    border: 3px solid transparent;
+    border-bottom-color: currentColor;
+    border-top-color: currentColor
+}

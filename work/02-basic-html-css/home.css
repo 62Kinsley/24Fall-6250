@@ -1,0 +1,9 @@
+.animal{
+    border: solid #FF69B4;
+    padding: 30px;
+    list-style-type: \1F431;
+}
+
+ul.list{
+  list-style-type: "\1F431";;
+} 
